@@ -3,12 +3,12 @@ public class Main {
         BinaryStack stack = new BinaryStack();
 
         // Test inserting elements into the stack
-        stack.insertMin(4);
-        stack.insertMin(2);
-        stack.insertMin(1);
-        stack.insertMin(3);
-        stack.insertMin(6);
-        stack.insertMin(5);
+        stack.insert(4);
+        stack.insert(2);
+        stack.insert(1);
+        stack.insert(3);
+        stack.insert(6);
+        stack.insert(5);
         stack.printPreorder(); // Expected output: 1 2 3 4 5 6
 
         // Test deleting the minimum element from the stack

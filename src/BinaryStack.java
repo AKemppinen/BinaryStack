@@ -11,19 +11,19 @@ public class BinaryStack {
     }
 
     // Inserts a new node with the given key
-    public void insertMin(int key) {
-        root = insertMin(root, key);
+    public void insert(int key) {
+        root = insert(root, key);
     }
 
     // Recursive helper method for inserting a new node
-    private Node insertMin(Node node, int key) {
+    private Node insert(Node node, int key) {
         if (node == null) {
             return new Node(key);
         }
         if (key < node.key) {
-            node.left = insertMin(node.left, key);
+            node.left = insert(node.left, key);
         } else {
-            node.right = insertMin(node.right, key);
+            node.right = insert(node.right, key);
         }
         return node;
     }
