@@ -24,6 +24,6 @@ public class Main {
         stack.deleteMin();
         stack.deleteMin();
         stack.deleteMin();
-        stack.printPreorder(); // Expected output: (empty)
+        stack.printPreorder(); // Expected output:
     }
 }
